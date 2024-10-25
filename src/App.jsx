@@ -1,7 +1,11 @@
-import "./App.css";
+import RatingCard from "./components/RatingCard";
 
 function App() {
-  return <h1>Rating component</h1>;
+  return (
+    <div>
+      <RatingCard />
+    </div>
+  );
 }
 
 export default App;
