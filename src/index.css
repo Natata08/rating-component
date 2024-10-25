@@ -5,10 +5,26 @@
   --color-white: hsl(0, 0%, 100%);
   --color-light-grey: hsl(217, 12%, 63%);
   --color-dark-blue: hsl(213, 19%, 18%);
+  --color-dark-blue-light: hsl(213, 19%, 22%);
   --color-very-dark-blue: hsl(216, 12%, 8%);
 
+  --spacing-04: 0.25rem;
+  --spacing-08: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem; /* 16px */
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-64: 4rem;
+
+  --border-radius: 1.875rem;
+
+  --font-size-base: 0.9375rem; /* 15px */
+  --font-size-large: 1.5rem;
+
   --font-family: "Overpass", sans-serif;
-  --font-size-paragraph: 15px;
 }
 
 * {
@@ -20,8 +36,20 @@
 body {
   font-family: var(--font-family);
   background-color: var(--color-very-dark-blue);
+  color: var(--color-white);
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
