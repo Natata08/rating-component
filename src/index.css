@@ -55,6 +55,15 @@ body {
   border: 0;
 }
 
+.container {
+  position: relative;
+  min-height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .card {
   background: var(--color-dark-blue);
   border-radius: var(--border-radius);
@@ -65,4 +74,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-16);
+}
+
+@media (min-width: 376px) {
+  .container {
+    min-height: 25rem;
+  }
+
+  .card {
+    padding: var(--spacing-32);
+    max-width: 25rem;
+    min-height: 25rem;
+  }
 }

@@ -90,11 +90,6 @@
 }
 
 @media (min-width: 376px) {
-  .card {
-    padding: var(--spacing-32);
-    max-width: 25rem;
-  }
-
   .starIcon {
     width: var(--spacing-48);
     height: var(--spacing-48);

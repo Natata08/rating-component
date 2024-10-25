@@ -29,12 +29,6 @@
 }
 
 @media (min-width: 376px) {
-  .card {
-    padding: var(--spacing-32);
-    max-width: 25rem;
-    min-height: 25rem;
-  }
-
   .image img {
     height: 7rem;
   }
