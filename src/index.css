@@ -54,3 +54,15 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.card {
+  background: var(--color-dark-blue);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-24);
+  width: 100%;
+  max-width: 22rem;
+  min-height: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}

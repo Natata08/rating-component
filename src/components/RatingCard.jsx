@@ -12,7 +12,7 @@ const RatingCard = ({ onSubmit }) => {
   };
 
   return (
-    <div className={styles.card}>
+    <div className='card'>
       <div className={styles.starIcon}>
         <img src='/images/icon-star.svg' alt='Star icon' />
       </div>
