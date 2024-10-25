@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RatingCard from "./components/RatingCard";
+import FeedbackCard from "./components/FeedbackCard";
 
 function App() {
   const [selectedRating, setSelectedRating] = useState(null);
@@ -14,7 +15,7 @@ function App() {
   return (
     <main>
       {!isSubmitted && <RatingCard onSubmit={handleSubmit} />}
-      {isSubmitted && <h2>{`You chose ${selectedRating}`}</h2>}
+      {isSubmitted && <FeedbackCard rating={selectedRating} />}
     </main>
   );
 }
