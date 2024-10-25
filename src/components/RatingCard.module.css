@@ -3,7 +3,7 @@
   border-radius: var(--border-radius);
   padding: var(--spacing-24);
   width: 100%;
-  max-width: 20.5rem;
+  max-width: 20rem;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-16);
@@ -38,6 +38,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .ratingLabel {
   position: relative;
   cursor: pointer;
@@ -97,4 +98,31 @@
 .submitButton:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+@media (min-width: 376px) {
+  .card {
+    padding: var(--spacing-32);
+    max-width: 25rem;
+  }
+
+  .starIcon {
+    width: var(--spacing-48);
+    height: var(--spacing-48);
+  }
+
+  .starIcon img {
+    width: var(--spacing-20);
+    height: var(--spacing-20);
+  }
+
+  .ratingButton {
+    width: var(--spacing-48);
+    height: var(--spacing-48);
+  }
+
+  .submitButton {
+    padding: var(--spacing-16);
+    font-size: var(--font-size-base);
+  }
 }
