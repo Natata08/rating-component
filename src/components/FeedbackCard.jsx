@@ -3,12 +3,9 @@ import styles from "./FeedbackCard.module.css";
 
 const FeedbackCard = ({ rating }) => {
   return (
-    <div className={`card ${styles.center}`}>
+    <div className={`card ${styles.center}`} aria-live='polite'>
       <div className={styles.image}>
-        <img
-          src='images/illustration-thank-you.svg'
-          alt='Thank you illustration'
-        />
+        <img src='images/illustration-thank-you.svg' alt='' />
       </div>
 
       <p className={styles.rating}>You selected {rating} out of 5</p>

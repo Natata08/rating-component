@@ -12,7 +12,7 @@ const RatingCard = ({ onSubmit, selectedRating, setSelectedRating }) => {
   return (
     <div className='card'>
       <div className={styles.starIcon}>
-        <img src='/images/icon-star.svg' alt='Star icon' />
+        <img src='/images/icon-star.svg' alt='' />
       </div>
       <h2 className={styles.title}>How did we do?</h2>
       <p className={styles.description}>
@@ -31,6 +31,7 @@ const RatingCard = ({ onSubmit, selectedRating, setSelectedRating }) => {
                 className={styles.ratingInput}
                 checked={selectedRating === rating}
                 onChange={(e) => setSelectedRating(Number(e.target.value))}
+                aria-label={`Rate ${rating} out of 5`}
               />
               <span className={styles.ratingButton}>{rating}</span>
             </label>
@@ -41,6 +42,7 @@ const RatingCard = ({ onSubmit, selectedRating, setSelectedRating }) => {
           type='submit'
           className={styles.submitButton}
           disabled={!selectedRating}
+          aria-disabled={!selectedRating}
         >
           Submit
         </button>
