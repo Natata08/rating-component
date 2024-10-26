@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:[GitHub](https://github.com/Natata08/rating-component)
-- Live Site URL: [Add live site URL here]
+- Solution URL: [GitHub](https://github.com/Natata08/rating-component)
+- Live Site URL: [Demo](https://rating-component-taupe-two.vercel.app/)
 
 ## My process
 
