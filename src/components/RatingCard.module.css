@@ -1,11 +1,16 @@
 .starIcon {
   background-color: var(--color-dark-blue-light);
-  width: var(--spacing-40);
-  height: var(--spacing-40);
+  width: 2.7rem;
+  height: 2.7rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.starIcon img {
+  width: 0.8rem;
+  height: auto;
 }
 
 .title {
@@ -44,8 +49,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--spacing-40);
-  height: var(--spacing-40);
+  width: 2.7rem;
+  height: 2.7rem;
   border-radius: 50%;
   background-color: var(--color-dark-blue-light);
   color: var(--color-light-grey);
@@ -91,18 +96,17 @@
 
 @media (min-width: 376px) {
   .starIcon {
-    width: var(--spacing-48);
-    height: var(--spacing-48);
+    width: 3rem;
+    height: 3rem;
   }
 
   .starIcon img {
-    width: var(--spacing-20);
-    height: var(--spacing-20);
+    width: 1rem;
   }
 
   .ratingButton {
-    width: var(--spacing-48);
-    height: var(--spacing-48);
+    width: 3rem;
+    height: 3rem;
   }
 
   .submitButton {
