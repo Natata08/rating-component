@@ -13,9 +13,10 @@ function App() {
     exit: { opacity: 0, scale: 0.8 },
   };
 
-  const handleSubmit = (rating) => {
-    setSelectedRating(rating);
-    setIsSubmitted(true);
+  const handleSubmit = () => {
+    if (selectedRating) {
+      setIsSubmitted(true);
+    }
   };
 
   return (
@@ -30,7 +31,11 @@ function App() {
             exit='exit'
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <RatingCard onSubmit={handleSubmit} />
+            <RatingCard
+              onSubmit={handleSubmit}
+              selectedRating={selectedRating}
+              setSelectedRating={setSelectedRating}
+            />
           </motion.div>
         )}
         {isSubmitted && (

@@ -1,14 +1,12 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
 import styles from "./RatingCard.module.css";
 
-const RatingCard = ({ onSubmit }) => {
-  const [selectedRating, setSelectedRating] = useState(null);
+const RatingCard = ({ onSubmit, selectedRating, setSelectedRating }) => {
   const ratings = [1, 2, 3, 4, 5];
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (selectedRating) onSubmit(selectedRating);
+    onSubmit();
   };
 
   return (
@@ -31,6 +29,7 @@ const RatingCard = ({ onSubmit }) => {
                 name='rating'
                 value={rating}
                 className={styles.ratingInput}
+                checked={selectedRating === rating}
                 onChange={(e) => setSelectedRating(Number(e.target.value))}
               />
               <span className={styles.ratingButton}>{rating}</span>
@@ -52,6 +51,8 @@ const RatingCard = ({ onSubmit }) => {
 
 RatingCard.propTypes = {
   onSubmit: PropTypes.func.isRequired,
+  selectedRating: PropTypes.number,
+  setSelectedRating: PropTypes.func.isRequired,
 };
 
 export default RatingCard;
